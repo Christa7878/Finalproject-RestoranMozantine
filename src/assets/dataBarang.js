@@ -1,51 +1,21 @@
 const DataBarang = [
   {
-    nama: "Sepatu Nike",
-    harga: "Rp. 200.000",
+    nama: "Cheezy tomato bell pepper pizza",
+    harga: "Rp 87.000",
     image:
-      "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/10/20/f9b507fa-c340-4852-8abe-59b8ed2b4711.jpg",
+      "https://images.pexels.com/photos/2619970/pexels-photo-2619970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    nama: "Nike Zoom",
-    pekerjaan: "Rp.400.000",
+    nama: "Tomato olive and cheese bites bruschetta",
+    harga: "Rp 48.000",
     image:
-      "https://t-3.tstatic.net/jualbeli/img/2021/2/2367193/1-615857372-Sepatu-Nike-Zoom-Pegasus-37-Dark-Grey-BNIB-Size-Lengkap-Harga-Murah---Surabaya.jpg",
+      "https://images.pexels.com/photos/5639423/pexels-photo-5639423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    nama: "Sepatu Nike",
-    harga: "Rp. 200.000",
+    nama: "Homey Tiramisu with coffee & cocoa powder",
+    harga: "Rp 68.000",
     image:
-      "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/10/20/f9b507fa-c340-4852-8abe-59b8ed2b4711.jpg",
-  },
-  {
-    nama: "Nike Zoom",
-    pekerjaan: "Rp.400.000",
-    image:
-      "https://t-3.tstatic.net/jualbeli/img/2021/2/2367193/1-615857372-Sepatu-Nike-Zoom-Pegasus-37-Dark-Grey-BNIB-Size-Lengkap-Harga-Murah---Surabaya.jpg",
-  },
-  {
-    nama: "Sepatu Nike",
-    harga: "Rp. 200.000",
-    image:
-      "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/10/20/f9b507fa-c340-4852-8abe-59b8ed2b4711.jpg",
-  },
-  {
-    nama: "Nike Zoom",
-    pekerjaan: "Rp.400.000",
-    image:
-      "https://t-3.tstatic.net/jualbeli/img/2021/2/2367193/1-615857372-Sepatu-Nike-Zoom-Pegasus-37-Dark-Grey-BNIB-Size-Lengkap-Harga-Murah---Surabaya.jpg",
-  },
-  {
-    nama: "Sepatu Nike",
-    harga: "Rp. 200.000",
-    image:
-      "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/10/20/f9b507fa-c340-4852-8abe-59b8ed2b4711.jpg",
-  },
-  {
-    nama: "Nike Zoom",
-    pekerjaan: "Rp.400.000",
-    image:
-      "https://t-3.tstatic.net/jualbeli/img/2021/2/2367193/1-615857372-Sepatu-Nike-Zoom-Pegasus-37-Dark-Grey-BNIB-Size-Lengkap-Harga-Murah---Surabaya.jpg",
+      "https://images.pexels.com/photos/6880219/pexels-photo-6880219.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
 ];
 export default DataBarang;

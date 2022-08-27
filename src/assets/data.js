@@ -1,81 +1,45 @@
 const Data = [
   {
-    nama: "gilang",
-    pekerjaan: "pengajar",
+    nama: "Pasta",
+    keterangan:
+      "The best choice of whole wheat flour dough mixed with water and eggs that are boiled or baked",
     image:
-      "https://images.unsplash.com/photo-1501139083538-0139583c060f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGltZXxlbnwwfHwwfHw%3D&w=1000&q=80",
+      "https://images.pexels.com/photos/1487511/pexels-photo-1487511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    nama: "dio brando",
-    pekerjaan: "mahasiswa",
+    nama: "Pizza",
+    keterangan:
+      "flattened disk of bread dough topped with some combination of fresh ingredients",
     image:
-      "https://images.unsplash.com/photo-1427348693976-99e4aca06bb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmlzaW9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+      "https://images.pexels.com/photos/3762075/pexels-photo-3762075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    nama: "mutia",
-    pekerjaan: "pengajar",
+    nama: "Panzenella",
+    keterangan:
+      "Mixed tomatoes, cucumber, red pepper and other fresh ingredients with bread cubes and vinaigrette",
     image:
-      "https://images.unsplash.com/photo-1501139083538-0139583c060f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGltZXxlbnwwfHwwfHw%3D&w=1000&q=80",
+      "https://media.istockphoto.com/photos/italian-salad-in-a-white-plate-on-a-gray-concrete-background-picture-id1325937873?b=1&k=20&m=1325937873&s=612x612&w=0&h=OlhSCbuBLs_Nw-lIyseOrZzhxlcYQKIo4betCkfxi4M=",
   },
   {
-    nama: "windah",
-    pekerjaan: "mahasiswa",
+    nama: "Bruschetta",
+    keterangan:
+      "grilled bread rubbed with garlic and topped with olive oil and salt",
     image:
-      "https://images.unsplash.com/photo-1427348693976-99e4aca06bb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmlzaW9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+      "https://images.pexels.com/photos/7432991/pexels-photo-7432991.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    nama: "gilang",
-    pekerjaan: "pengajar",
+    nama: "Drinks",
+    keterangan:
+      "Fresh drinks such as Aperitivo, Campari, Americano, Bellini and more",
     image:
-      "https://images.unsplash.com/photo-1501139083538-0139583c060f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGltZXxlbnwwfHwwfHw%3D&w=1000&q=80",
+      "https://images.pexels.com/photos/544961/pexels-photo-544961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    nama: "dio brando",
-    pekerjaan: "mahasiswa",
+    nama: "Desserts",
+    keterangan:
+      "Home made dessert such as Tiramisu, Lemon Riccota Cake, and more",
     image:
-      "https://images.unsplash.com/photo-1427348693976-99e4aca06bb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmlzaW9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-  },
-  {
-    nama: "mutia",
-    pekerjaan: "pengajar",
-    image:
-      "https://images.unsplash.com/photo-1501139083538-0139583c060f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGltZXxlbnwwfHwwfHw%3D&w=1000&q=80",
-  },
-  {
-    nama: "windah",
-    pekerjaan: "mahasiswa",
-    image:
-      "https://images.unsplash.com/photo-1427348693976-99e4aca06bb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmlzaW9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-  },
-  {
-    nama: "windah",
-    pekerjaan: "mahasiswa",
-    image:
-      "https://images.unsplash.com/photo-1427348693976-99e4aca06bb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmlzaW9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-  },
-  {
-    nama: "gilang",
-    pekerjaan: "pengajar",
-    image:
-      "https://images.unsplash.com/photo-1501139083538-0139583c060f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGltZXxlbnwwfHwwfHw%3D&w=1000&q=80",
-  },
-  {
-    nama: "dio brando",
-    pekerjaan: "mahasiswa",
-    image:
-      "https://images.unsplash.com/photo-1427348693976-99e4aca06bb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmlzaW9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-  },
-  {
-    nama: "mutia",
-    pekerjaan: "pengajar",
-    image:
-      "https://images.unsplash.com/photo-1501139083538-0139583c060f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGltZXxlbnwwfHwwfHw%3D&w=1000&q=80",
-  },
-  {
-    nama: "windah",
-    pekerjaan: "mahasiswa",
-    image:
-      "https://images.unsplash.com/photo-1427348693976-99e4aca06bb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmlzaW9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+      "https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=400",
   },
 ];
 export default Data;

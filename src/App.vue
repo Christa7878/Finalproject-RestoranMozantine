@@ -7,35 +7,13 @@ export default {
   data: function () {
     return {
       content: Data,
-      popUp: false,
-      birthDay: "",
-      openedTab1: true,
-      openedTab2: false,
-      titleHero: "Centered Hero",
-      titleImage:
-        "https://media.istockphoto.com/photos/koala-picture-id537179382?k=20&m=537179382&s=612x612&w=0&h=t_uwjhdeiH70yO-GOl7iLngz2gzBxdGkW0d1LBqxlJI=",
+      titleHero: "Finest italian food for your taste",
     };
   },
   methods: {
     changeTitle(data) {
       this.titleHero = data.nama;
       this.titleImage = data.image;
-      this.popUp = true;
-    },
-    closePopUp() {
-      this.popUp = false;
-    },
-    showDate(value) {
-      // alert(value);
-      this.birthDay = value;
-    },
-    openTab1() {
-      this.openedTab1 = true;
-      this.openedTab2 = false;
-    },
-    openTab2() {
-      this.openedTab2 = true;
-      this.openedTab1 = false;
     },
   },
 };
@@ -44,7 +22,7 @@ export default {
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="">Navbar {{ birthDay }}</a>
+      <a class="navbar-brand" href="">Mozantine </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -59,133 +37,93 @@ export default {
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
+            <a class="nav-link" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Menu</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Pricing</a>
+            <a class="nav-link" href="">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Download</a>
+            <a class="nav-link" href="">Log in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Basket icon</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div>
-    <div class="scrollmenu">
-      <a href="#home">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-      <a href="#support">Support</a>
-      <a href="#blog">Blog</a>
-      <a href="#tools">Tools</a>
-      <a href="#base">Base</a>
-      <a href="#custom">Custom</a>
-      <a href="#more">More</a>
-      <a href="#logo">Logo</a>
-      <a href="#friends">Friends</a>
-      <a href="#partners">Partners</a>
-      <a href="#people">People</a>
-      <a href="#work">Work</a>
-    </div>
-  </div>
-  <div class="container">
-    <div class="tab" @click="openTab1">tab1</div>
-    <div class="tab" @click="openTab2">tab2</div>
-    <div class="isitab-1" v-bind:class="openedTab1 && 'show'">
-      orem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop
-      publishing software like Aldus PageMaker including versions of Lorem
-      Ipsum.
-    </div>
-    <div class="isitab-2" v-bind:class="openedTab2 && 'show'">
-      There are many variations of passages of Lorem Ipsum available, but the
-      majority have suffered alteration in some form, by injected humour, or
-      randomised words which don't look even slightly believable. If you are
-      going to use a passage of Lorem Ipsum, you need to be sure there isn't
-      anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-      generators on the Internet tend to repeat predefined chunks as necessary
-    </div>
-  </div>
 
-  <div class="">
-    <div v-for="data in Data" style="display: inline-block; max-width: 100px">
-      <img :src="data.image" alt="..." style="width: 100%" />
-    </div>
-  </div>
+  <div class=""></div>
   <div class="container">
-    <div class="px-4 py-5 my-5 text-center">
+    <div class="banner_top_image">
       <img
-        class="d-block mx-auto mb-4"
-        :src="titleImage"
-        alt=""
-        width="720"
-        height="570"
+        src="C:\Users\IMBA\OneDrive\Desktop\Frontend Training\Final Project Website\vuejs-bootstrap\src\assets\bannerBG1.jpg"
+        class="banner-img-top"
+        alt="banner img top"
+        width="800px"
       />
+    </div>
+    <div class="px-4 py-5 my-5 text-center">
       <svg class="bi" width="32" height="32" fill="white">
         <use xlink:href="bootstrap-icons.svg#heart-fill" />
       </svg>
       <h1 class="display-5 fw-bold">{{ titleHero }}</h1>
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">
-          Quickly design and customize responsive mobile-first sites with
-          Bootstrap, the world’s most popular front-end open source toolkit,
-          featuring Sass variables and mixins, responsive grid system, extensive
-          prebuilt components, and powerful JavaScript plugins.
+          Best handpicked ingredients from local farmers and cooked with
+          experienced Italian chefs.
         </p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
           <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
-            Primary button
-          </button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-            Secondary
+            Start order
           </button>
         </div>
       </div>
     </div>
   </div>
-  <div>
-    <div class="input-group">
-      <input type="date" id="birthday" name="birthday" v-model="value" />
-      <button @click="showDate(value)">add date</button>
-    </div>
-  </div>
-  <div class="outsideContainer" v-bind:class="popUp && 'shown'">
-    <div class="containerModal">
-      <div>
-        <div class="closeButton" @click="closePopUp">x</div>
-        <div class="row text-center">
-          <h1 class="display-5 fw-bold">{{ titleHero }}</h1>
-          <img
-            class="d-block mx-auto mb-4"
-            :src="titleImage"
-            alt=""
-            width="720"
-            height="570"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
+  <div></div>
+
   <div class="container">
     <div class="row">
-      <div class="col mt-5" v-for="data in DataBarang">
+      <div class="col mt-5" v-for="data in Data">
         <div class="card" style="width: 18rem">
           <img :src="data.image" class="card-img-top" alt="..." />
           <div class="card-body text-center">
             <h5 class="card-title title-name">{{ data.nama }}</h5>
-            <p class="card-text subtitle-name">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
+            <p class="card-text subtitle-name">{{ data.keterangan }}</p>
             <button @click="changeTitle(data)" href="#" class="btn btn-primary">
-              Go somewheres
+              View Menu
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <div class="container">
+    <h3 class="display-5 fw-bold">
+      <span style="color: #3aae4d">Chef </span>Recommendation
+    </h3>
+    <div class="row">
+      <div class="col mt-5" v-for="dataBarang in DataBarang">
+        <div class="card" style="width: 18rem">
+          <img :src="dataBarang.image" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title title-name">{{ dataBarang.nama }}</h5>
+            <p class="card-text subtitle-name">{{ dataBarang.harga }}</p>
+            <button @click="changeTitle(data)" href="#" class="btn btn-primary">
+              Add to basket
             </button>
           </div>
         </div>
@@ -222,6 +160,11 @@ div.scrollmenu a:hover {
 .subtitle-name {
   color: grey;
 }
+
+.banner_top_image {
+  position: absolute;
+}
+
 .logo {
   display: block;
   margin: 0 auto 2rem;
@@ -235,31 +178,7 @@ div.scrollmenu a:hover {
   cursor: pointer;
   z-index: 10;
 }
-.tab {
-  display: inline-block;
-  margin-right: 20px;
-  cursor: pointer;
-}
-.tab:hover {
-  background-color: white;
-  color: hotpink;
-}
-.isitab-1 {
-  background-color: grey;
-  visibility: hidden;
-  height: 0;
-}
-.isitab-2 {
-  background-color: grey;
-  visibility: hidden;
-  height: 0;
-}
-.isitab-1.show {
-  visibility: visible;
-}
-.isitab-2.show {
-  visibility: visible;
-}
+
 .outsideContainer {
   position: absolute;
   top: 0;
@@ -306,5 +225,50 @@ div.scrollmenu a:hover {
     place-items: flex-start;
     flex-wrap: wrap;
   }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+body {
+  display: flex;
+  background-color: #f0f8ff;
+  height: 95vh;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: Open Sans;
+}
+
+#container {
+  padding-top: 20px;
+  margin-top: 20px;
+  width: 100vw;
+  color: white;
+  background-color: #292354;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contacts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+#contacts--contact {
+  text-align: right;
+}
+#contacts--social {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+#contacts--social div {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
+#mentions p {
+  font-size: 0.5em;
 }
 </style>
