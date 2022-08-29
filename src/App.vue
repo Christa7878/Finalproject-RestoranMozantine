@@ -63,7 +63,11 @@ export default {
             <a class="nav-item" href=""
               ><button
                 type="button"
-                style="background-color: #3aae4d; border-color: #3aae4d"
+                style="
+                  background-color: #3aae4d;
+                  border-color: #3aae4d;
+                  color: white;
+                "
                 class="btn btn-warning"
               >
                 Log in
@@ -96,53 +100,117 @@ export default {
     /> -->
 
   <!-- opsi image 2 yang responsive -->
-  <div class=""></div>
-  <div class="container2">
-    <img src="./assets/bannerBG1.jpg" class="img-fluid" alt="banner img top" />
-  </div>
-  <!-- image ends here -->
+  <!-- <img src="./assets/bannerBG1.jpg" class="img-fluid" alt="banner img top" /> -->
 
-  <div class="px-4 py-5 my-5 text-center">
-    <h1 class="display-5 fw-bold">{{ titleHero }}</h1>
-    <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">
-        Best handpicked ingredients from local farmers and cooked with
-        experienced Italian chefs.
-      </p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button
-          type="button"
-          style="background-color: #3aae4d; border-color: #3aae4d"
-          class="btn btn-primary btn-lg px-4 gap-3"
-        >
-          Start order
-        </button>
+  <!-- opsi 3 image di background, distyle css dibawah (stylecontainer2) -->
+  <div class="stylecontainer2">
+    <div class="container">
+      <div class="styletextbannerjudul">
+        <div class="px-4 py-5 my-5 text-center">
+          <h1 class="display-5 fw-bold py-3" style="text-align: center">
+            {{ titleHero }}
+          </h1>
+
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4" style="text-align: center">
+              Best handpicked ingredients from local farmers and cooked with
+              experienced Italian chefs.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button
+                type="button"
+                style="background-color: #3aae4d; border-color: #3aae4d"
+                class="btn btn-primary btn-lg px-4 gap-3"
+              >
+                Start Order
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- Ini area superb taste and experience -->
 
-  <div class="container">
-    <h3 class="display-5 fw-bold">
-      <span style="color: #3aae4d">Superb </span>Taste And Experience
-    </h3>
-    <p></p>
-    <div class="row">
-      <div class="col mt-5" v-for="data in Data">
-        <div class="card" style="width: 18rem">
-          <img :src="data.image" class="card-img-top" alt="..." />
-          <div class="card-body text-center">
-            <h5 class="card-title title-name">{{ data.nama }}</h5>
-            <p class="card-text subtitle-name">{{ data.keterangan }}</p>
-            <button
-              @click="changeTitle(data)"
-              href="#"
-              style="background-color: #3aae4d; border-color: #3aae4d"
-              class="btn btn-primary"
-            >
-              View Menu
-            </button>
+  <div class="padding70px">
+    <div class="container">
+      <h3 class="display-5 fw-bold" style="text-align: center">
+        <span style="color: #3aae4d">Superb </span>Taste And Experience
+      </h3>
+      <p class="lead mb-4" style="text-align: center">
+        Delicious Italian menu suited for your taste and more importantly! It's
+        affordable
+      </p>
+    </div>
+
+    <!-- Ini area We make sure your food arrive on time -->
+    <div class="padding70px">
+      <div class="container">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="https://images.pexels.com/photos/6407626/pexels-photo-6407626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="col-lg-6">
+            <h3 class="display-5 fw-bold 1h-1 mb-3" style="text-align: left">
+              We make sure your food arrive on time
+            </h3>
+            <p class="lead mb-4" style="text-align: left">
+              There will be a notification whether our chef is still cooking
+              your food, the driver is picking up your food, the food is on the
+              way to you, and the food has arrived within the estimated time.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-md-start">
+              <button
+                type="button"
+                style="background-color: #3aae4d; border-color: #3aae4d"
+                class="btn btn-primary btn-lg px-4 me-md-2"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Category Area -->
+
+    <div class="padding70px">
+      <div class="container">
+        <div class="stylecontainermenucategory">
+          <h3 class="display-5 fw-bold" style="text-align: center">
+            <span style="color: #3aae4d">Menu </span>Category
+          </h3>
+        </div>
+
+        <div class="stylecontainer-kolomtengah">
+          <div class="row">
+            <div class="col mt-5" v-for="data in Data">
+              <div class="card" style="width: 18rem">
+                <img :src="data.image" class="card-img-top" alt="..." />
+                <div class="card-body text-center">
+                  <h5 class="card-title title-name">{{ data.nama }}</h5>
+                  <p class="card-text subtitle-name">{{ data.keterangan }}</p>
+                  <button
+                    @click="changeTitle(data)"
+                    href="#"
+                    style="background-color: #3aae4d; border-color: #3aae4d"
+                    class="btn btn-primary"
+                  >
+                    View Menu
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -150,31 +218,30 @@ export default {
   </div>
 
   <!-- Ini area chef recommendation -->
+  <div class="padding70px">
+    <div class="container" text-align="center">
+      <h3 class="display-5 fw-bold" style="text-align: center">
+        <span style="color: #3aae4d">Chef </span>Recommendation
+      </h3>
 
-  <br />
-  <br />
-  <br />
-  <br />
-
-  <div class="container">
-    <h3 class="display-5 fw-bold">
-      <span style="color: #3aae4d">Chef </span>Recommendation
-    </h3>
-    <div class="row">
-      <div class="col mt-5" v-for="dataBarang in DataBarang">
-        <div class="card" style="width: 18rem">
-          <img :src="dataBarang.image" class="card-img-top" alt="..." />
-          <div class="card-body text-center">
-            <h5 class="card-title title-name">{{ dataBarang.nama }}</h5>
-            <p class="card-text subtitle-name">{{ dataBarang.harga }}</p>
-            <button
-              @click="changeTitle(data)"
-              href="#"
-              style="background-color: #3aae4d; border-color: #3aae4d"
-              class="btn btn-primary"
-            >
-              Add to basket
-            </button>
+      <div class="stylecontainerkolomtengah">
+        <div class="row">
+          <div class="col mt-5" v-for="dataBarang in DataBarang">
+            <div class="card" style="width: 18rem">
+              <img :src="dataBarang.image" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h5 class="card-title title-name">{{ dataBarang.nama }}</h5>
+                <p class="card-text subtitle-name">{{ dataBarang.harga }}</p>
+                <button
+                  @click="changeTitle(data)"
+                  href="#"
+                  style="background-color: #3aae4d; border-color: #3aae4d"
+                  class="btn btn-primary"
+                >
+                  Add to basket
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -279,6 +346,44 @@ export default {
 header {
   line-height: 1.5;
 }
+
+.padding70px {
+  padding: 70px;
+}
+
+.stylecontainer2 {
+  display: flex;
+  background-image: url(./assets/bannerBG1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.styletextbannerjudul {
+  display: flex;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  flex-direction: column;
+}
+
+.stylecontainermenucategory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+}
+
+.stylecontainerkolomtengah {
+  flex-grow: 2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 div.scrollmenu {
   background-color: #333;
   overflow: auto;
@@ -311,37 +416,6 @@ div.scrollmenu a:hover {
 .logo {
   display: block;
   margin: 0 auto 2rem;
-}
-
-.outsideContainer {
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
-  visibility: hidden;
-  opacity: 0;
-  transition-property: all;
-  transition-duration: 1s;
-  z-index: 10;
-}
-.containerModal {
-  background-color: white;
-  padding: 20px;
-  color: black;
-
-  width: 100%;
-  z-index: 10;
-  width: 400px;
-  height: 400px;
-  margin: 40vh auto;
-}
-.containerModal img {
-  height: 300px;
-}
-.outsideContainer.shown {
-  visibility: visible;
-  opacity: 1;
 }
 @media (min-width: 1024px) {
   header {

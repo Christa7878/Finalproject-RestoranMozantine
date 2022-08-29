@@ -12,7 +12,7 @@ const DataBarang = [
       "https://images.pexels.com/photos/5639423/pexels-photo-5639423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
-    nama: "Homey Tiramisu with coffee & cocoa powder",
+    nama: "Home made Tiramisu with coffee & cocoa powder",
     harga: "Rp 68.000",
     image:
       "https://images.pexels.com/photos/6880219/pexels-photo-6880219.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
