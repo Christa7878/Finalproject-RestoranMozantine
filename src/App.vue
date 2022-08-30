@@ -143,72 +143,70 @@ export default {
         affordable
       </p>
     </div>
+  </div>
 
-    <!-- Ini area We make sure your food arrive on time -->
-    <div class="padding70px">
-      <div class="container">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img
-              src="https://images.pexels.com/photos/6407626/pexels-photo-6407626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class="d-block mx-lg-auto img-fluid"
-              alt="Bootstrap Themes"
-              width="700"
-              height="500"
-              loading="lazy"
-            />
-          </div>
+  <!-- Ini area We make sure your food arrive on time -->
+  <div class="padding70px">
+    <div class="container">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="https://images.pexels.com/photos/6407626/pexels-photo-6407626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
 
-          <div class="col-lg-6">
-            <h3 class="display-5 fw-bold 1h-1 mb-3" style="text-align: left">
-              We make sure your food arrive on time
-            </h3>
-            <p class="lead mb-4" style="text-align: left">
-              There will be a notification whether our chef is still cooking
-              your food, the driver is picking up your food, the food is on the
-              way to you, and the food has arrived within the estimated time.
-            </p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-md-start">
-              <button
-                type="button"
-                style="background-color: #3aae4d; border-color: #3aae4d"
-                class="btn btn-primary btn-lg px-4 me-md-2"
-              >
-                Get Started
-              </button>
-            </div>
+        <div class="col-lg-6">
+          <h3 class="display-5 fw-bold 1h-1 mb-3" style="text-align: left">
+            We make sure your food arrive on time
+          </h3>
+          <p class="lead mb-4" style="text-align: left">
+            There will be a notification whether our chef is still cooking your
+            food, the driver is picking up your food, the food is on the way to
+            you, and the food has arrived within the estimated time.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-md-start">
+            <button
+              type="button"
+              style="background-color: #3aae4d; border-color: #3aae4d"
+              class="btn btn-primary btn-lg px-4 me-md-2"
+            >
+              Get Started
+            </button>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Menu Category Area -->
+  <!-- Menu Category Area -->
 
-    <div class="padding70px">
-      <div class="container">
-        <div class="stylecontainermenucategory">
-          <h3 class="display-5 fw-bold" style="text-align: center">
-            <span style="color: #3aae4d">Menu </span>Category
-          </h3>
-        </div>
+  <div class="padding70px">
+    <div class="container" text-align="center">
+      <h3 class="display-5 fw-bold" style="text-align: center">
+        <span style="color: #3aae4d">Menu </span>Category
+      </h3>
 
-        <div class="stylecontainer-kolomtengah">
-          <div class="row">
-            <div class="col mt-5" v-for="data in Data">
-              <div class="card" style="width: 18rem">
-                <img :src="data.image" class="card-img-top" alt="..." />
-                <div class="card-body text-center">
-                  <h5 class="card-title title-name">{{ data.nama }}</h5>
-                  <p class="card-text subtitle-name">{{ data.keterangan }}</p>
-                  <button
-                    @click="changeTitle(data)"
-                    href="#"
-                    style="background-color: #3aae4d; border-color: #3aae4d"
-                    class="btn btn-primary"
-                  >
-                    View Menu
-                  </button>
-                </div>
+      <div class="stylecontainerkolomtengah">
+        <div class="row">
+          <div class="col mt-5" v-for="data in Data">
+            <div class="card" style="width: 18rem">
+              <img :src="data.image" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h5 class="card-title title-name">{{ data.nama }}</h5>
+                <p class="card-text subtitle-name">{{ data.keterangan }}</p>
+                <button
+                  @click="changeTitle(data)"
+                  href="#"
+                  style="background-color: #3aae4d; border-color: #3aae4d"
+                  class="btn btn-primary"
+                >
+                  Add to basket
+                </button>
               </div>
             </div>
           </div>
@@ -351,6 +349,18 @@ header {
   padding: 70px;
 }
 
+.button1 {
+  background-color: #3aae4d;
+  color: white;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background-color: #247532;
+  color: white;
+}
+
 .stylecontainer2 {
   display: flex;
   background-image: url(./assets/bannerBG1.jpg);
@@ -379,7 +389,7 @@ header {
   flex-grow: 2;
   display: flex;
   flex-wrap: wrap;
-  width: 70vw;
+  width: 48vw;
   margin-left: auto;
   margin-right: auto;
 }
