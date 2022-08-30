@@ -23,7 +23,9 @@ export default {
   <!-- Area Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="">Mozantine </a>
+      <a class="navbar-brand" href=""
+        ><img src="./assets/MozantineLogo.svg" alt="logo mozantine" />
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -89,6 +91,7 @@ export default {
     </div>
   </nav>
 
+  <!-- Area Jumbotron/banner teratas setelah navbar -->
   <!-- opsi image1 -->
   <!-- <div class=""></div>
   <div class="container2">
@@ -146,37 +149,39 @@ export default {
   </div>
 
   <!-- Ini area We make sure your food arrive on time -->
-  <div class="padding70px">
-    <div class="container">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
-          <img
-            src="https://images.pexels.com/photos/6407626/pexels-photo-6407626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            class="d-block mx-lg-auto img-fluid"
-            alt="Bootstrap Themes"
-            width="700"
-            height="500"
-            loading="lazy"
-          />
-        </div>
+  <div class="stylebackground1">
+    <div class="padding70px">
+      <div class="container">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="https://images.pexels.com/photos/6407626/pexels-photo-6407626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
 
-        <div class="col-lg-6">
-          <h3 class="display-5 fw-bold 1h-1 mb-3" style="text-align: left">
-            We make sure your food arrive on time
-          </h3>
-          <p class="lead mb-4" style="text-align: left">
-            There will be a notification whether our chef is still cooking your
-            food, the driver is picking up your food, the food is on the way to
-            you, and the food has arrived within the estimated time.
-          </p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-md-start">
-            <button
-              type="button"
-              style="background-color: #3aae4d; border-color: #3aae4d"
-              class="btn btn-primary btn-lg px-4 me-md-2"
-            >
-              Get Started
-            </button>
+          <div class="col-lg-6">
+            <h3 class="display-5 fw-bold 1h-1 mb-3" style="text-align: left">
+              We make sure your food arrive on time
+            </h3>
+            <p class="lead mb-4" style="text-align: left">
+              There will be a notification whether our chef is still cooking
+              your food, the driver is picking up your food, the food is on the
+              way to you, and the food has arrived within the estimated time.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-md-start">
+              <button
+                type="button"
+                style="background-color: #3aae4d; border-color: #3aae4d"
+                class="btn btn-primary btn-lg px-4 me-md-2"
+              >
+                Get Started
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -216,28 +221,30 @@ export default {
   </div>
 
   <!-- Ini area chef recommendation -->
-  <div class="padding70px">
-    <div class="container" text-align="center">
-      <h3 class="display-5 fw-bold" style="text-align: center">
-        <span style="color: #3aae4d">Chef </span>Recommendation
-      </h3>
+  <div class="stylebackground1">
+    <div class="padding70px">
+      <div class="container" text-align="center">
+        <h3 class="display-5 fw-bold" style="text-align: center">
+          <span style="color: #3aae4d">Chef </span>Recommendation
+        </h3>
 
-      <div class="stylecontainerkolomtengah">
-        <div class="row">
-          <div class="col mt-5" v-for="dataBarang in DataBarang">
-            <div class="card" style="width: 18rem">
-              <img :src="dataBarang.image" class="card-img-top" alt="..." />
-              <div class="card-body text-center">
-                <h5 class="card-title title-name">{{ dataBarang.nama }}</h5>
-                <p class="card-text subtitle-name">{{ dataBarang.harga }}</p>
-                <button
-                  @click="changeTitle(data)"
-                  href="#"
-                  style="background-color: #3aae4d; border-color: #3aae4d"
-                  class="btn btn-primary"
-                >
-                  Add to basket
-                </button>
+        <div class="stylecontainerkolomtengah">
+          <div class="row">
+            <div class="col mt-5" v-for="dataBarang in DataBarang">
+              <div class="card" style="width: 18rem">
+                <img :src="dataBarang.image" class="card-img-top" alt="..." />
+                <div class="card-body text-center">
+                  <h5 class="card-title title-name">{{ dataBarang.nama }}</h5>
+                  <p class="card-text subtitle-name">{{ dataBarang.harga }}</p>
+                  <button
+                    @click="changeTitle(data)"
+                    href="#"
+                    style="background-color: #3aae4d; border-color: #3aae4d"
+                    class="btn btn-primary"
+                  >
+                    Add to basket
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -335,6 +342,10 @@ export default {
         class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
       >
         <p>© 2022 Mozantine All rights reserved.</p>
+        <p>
+          Final Project FrontEnd Website Development MySkill made by Christina
+          and Roberto.
+        </p>
       </div>
     </footer>
   </div>
@@ -359,6 +370,10 @@ header {
 .button1:hover {
   background-color: #247532;
   color: white;
+}
+
+.stylebackground1 {
+  background-color: rgb(236, 236, 236);
 }
 
 .stylecontainer2 {
@@ -389,7 +404,7 @@ header {
   flex-grow: 2;
   display: flex;
   flex-wrap: wrap;
-  width: 48vw;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
